@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import './index.css';
+import "./index.css";
 //import App from './App';
-import Hey from './component/Hey.jsx'
-import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css'
+// import Hey from "./component/Hey";
+// import Counters from "./component/counters";
+import Counters from "./component/counters";
+import * as serviceWorker from "./serviceWorker";
+import "bootstrap/dist/css/bootstrap.css";
 
 //ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<Hey />, document.getElementById('root'));
+ReactDOM.render(<Counters />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

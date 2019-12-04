@@ -11,10 +11,15 @@ class Hey extends Component {
     fontWeight: "bold"
   };
 
+  messages = {
+    m1: "Hi",
+    m2: "Hello"
+  };
+
   // it is being called by instance, not by method
   handlerIncrement = () => {
     console.log("Increment clicked");
-    this.setState({ message: (this.state.message = "DANGER") });
+    this.setState({ message: "DANGER" });
   };
 
   // code inside is not javascript, it is jxs
@@ -22,7 +27,7 @@ class Hey extends Component {
     return (
       <React.Fragment>
         <span className={this.createMessage()}>{this.wrapperIt()}</span>
-        <h2> =8-) </h2>
+        <h2> =8-) ... </h2>
         <ul>
           {this.state.options.length === 0 && <p>No Options available!</p>}
           {this.state.options.map(option => (
@@ -35,17 +40,13 @@ class Hey extends Component {
             Danger
           </button>
           <button
-            onClick={() =>
-              this.setState({ message: (this.state.message = "WARNING") })
-            }
+            onClick={() => this.setState({ message: "WARNING" })}
             className="btn btn-secondary btn-sm"
           >
             Warning
           </button>
           <button
-            onClick={() =>
-              this.setState({ message: (this.state.message = "SUCCESS") })
-            }
+            onClick={() => this.setState({ message: "SUCCESS" })}
             className="btn btn-secondary btn-sm"
           >
             Success
