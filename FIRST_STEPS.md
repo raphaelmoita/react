@@ -17,6 +17,10 @@ npm i -g create-react-app
 3. install Live Server (auto refresh page)
 4. Go to setting and enable Format on Save
 
+### Configure extensions on Chrome
+1. React Developer Tools
+
+
 ### Create an app
 
 1. [npx](https://www.npmjs.com/package/npx) create-react-app react-app
