@@ -24,3 +24,8 @@ npm i -g create-react-app
 3. npm start (it will open a browser with react initial page)
 4. install bootstrap (npm i bootstrap)
 
+
+### Thoubeshooting
+
+- ***ERROR:*** Error: ENOSPC: System limit for number of file watchers reached
+- ***SOLUTION:*** echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
